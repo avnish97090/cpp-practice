@@ -1,9 +1,7 @@
-// A  B  C  D  
-// E  F  G  H
-// I  J  K  L
-// M  N  O  P 
-
-
+// A   B   C
+// B   C   D 
+// C   D   E 
+// D   E   F
 
 
 
@@ -14,17 +12,19 @@ using namespace std;
 int main(){
     int n;
     cin>>n;
-    char value='A';
     int row=1;
     while(row<=n){
         int col=1;
         while(col<=n){
-            cout<<value << "  ";
-            value=value+1;
+             char ch='A'+ row + col -2 ;
+            cout<< ch << " " ;
             col=col+1;
 
         }
-        cout<<endl;
-        row=row+1;
+            cout<<endl;
+            row=row+1;
+
+
+
     }
 }

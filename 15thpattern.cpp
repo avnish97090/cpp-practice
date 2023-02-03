@@ -1,24 +1,24 @@
+// A 
+// B B 
+// C C C 
+// D D D D
+
 
 #include<iostream>
 using namespace std;
 int main(){
-    int n ;
-    cin >> n ;
-    int i = 1;
-    
-    
-    while(i<= n){
-        int j = 1;
-        char che = 'A';
-        while(j<= n){
-            cout << che;
-              che++;
-            j++;
+    int n;
+    cin>> n;
+
+    int row=1;
+    while(row<=n){
+        int col=1;
+        while(col<=row){
+            char ch= 'A' + row -1;
+            cout<< ch << "  ";
+            col=col+1;
         }
-        cout<< endl;
-    
-
-
-    i++;
+        cout<<endl;
+        row=row+1;
     }
 }

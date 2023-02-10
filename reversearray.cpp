@@ -9,9 +9,12 @@ void printArray(int input[] , int n ){
 void reverse(int input[], int n){
     int i = 0, j = n-1;
     while(i<j){
-        int temp = input[i];
-        input[i]= input[j];
-        input[j]= temp;
+        // int temp = input[i];
+        // input[i]= input[j];
+        // input[j]= temp;
+        // i++;
+        // j--;
+        swap(input[i],input[j]);
         i++;
         j--;
 

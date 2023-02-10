@@ -11,12 +11,15 @@ void stringReverse(char input[]){
     int i = 0; int len = stringLength(input);
     int j = len -1 ;
     while(i<j){
-           char temp;
-           temp = input[i];
-           input[i]= input[j];
-           input[j]= temp;
-           i++;
-           j--;
+        //    char temp;
+        //    temp = input[i];
+        //    input[i]= input[j];
+        //    input[j]= temp;
+        //    i++;
+        //    j--;
+        swap(input[i] , input[j] ) ;
+        i++;
+        j--;
     }
      
 }
